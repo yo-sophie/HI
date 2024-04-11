@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>repl.it</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    body {
+      padding: 20px 0;
+    }
+
+    /* 由大到小的 RWD */
+    .box1 {
+      height: 80px;
+      background: lightpink;
+    }
+
+    @media(max-width: 920px) {
+      .box1 {
+        background: orange;
+      }
+    }
+
+    @media(max-width: 768px) {
+      .box1 {
+        background: lightyellow;
+      }
+    }
+
+    @media(max-width: 540px) {
+      .box1 {
+        background: lightgreen;
+      }
+
+      .yinyue {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        height: 30px;
+        right: 20px;
+      }
+
+      width: 300px;
+      height: 100px;
+      background-color: pink;
+    }
+
+    @media screen and (min-width:500px) {
+      .box {
+        width: 500px;
+        background-color: green;
+      }
+    }
+
+    @media screen and (min-width:1000px) {
+      .box {
+        width: 1000px;
+        background-color: blue;
+      }
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+      padding: 34px 0 14px 40px;
+    }
+
+    nav>ul {
+      background-color: rgb(230, 230, 230);
+      list-style: none;
+      /* 移除項目符號 */
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: inherit;
+      /* 移除超連結顏色 */
+      display: block;
+      /* 讓 <a> 填滿 <li> */
+      font-size: 1.2rem;
+      padding: 10px;
+      text-decoration: none;
+      /* 移除超連結底線 */
+    }
+
+    /* 滑鼠移到 <a> 時變成深底淺色 */
+    nav li:hover {
+      background-color: rgb(115, 115, 115);
+      color: white;
+    }
+
+    /* 移除 <li> 之間的空隙 */
+
+    .flex-nav {
+      display: flex;
+      justify-content: center;
+    }
+
+    .inline-block-nav {
+      text-align: center;
+      font-size: 0;
+      /* 移除 <li> 之間的空隙 */
+    }
+
+    .inline-block-nav>li {
+      display: inline-block;
+    }
+
+    h3 {
+      /*border-top-style:dotted;*/
+      border-top-style: solid;
+      border-color: #E6C3C3;
+      border-width: 5px;
+      /*border-bottom-style:dotted;*/
+      border-bottom-style: solid;
+      width: 1000px;
+      height: auto;
+      margin: 0 auto;
+    }
+  </style>
+
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <nav>
+    <ul class="flex-nav">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="自我介紹.html">自我介紹</a></li>
+      <li><a href="作品集.html">作品集</a></li>
+      <li><a href="獎狀.html">獎狀</a></li>
+      <li><a href="證照.html">證照</a></li>
+
+    </ul>
+  </nav><br><br><br>
+  <h1 align=center>海報</h1>
+  <h3 align=center><br><br>
+    <img src="海1.jpg" width="246""height=" 179">
+    <img src="海8.png" width="246""height=" 179">
+    <img src="海4.jpg" width="246""height=" 170">
+    <img src="海5.jpg" width="246""height=" 180"><br><br>
+
+    <img src="海6.png" width="246""height=" 180">
+    <img src="海13.jpg" width="246""height=" 180">
+    <img src="海12.png" width="246""height=" 180">
+    <img src="海7.jpg" width="246""height=" 180"><br>
+
+    <img src="海10.png" width="246""height=" 180">
+    <img src="海2.jpg" width="246""height=" 180">
+    <img src="海9.jpg" width="246""height=" 180">
+    <img src="海3.jpg" width="246""height=" 180">
+
+    <br><br><br>
+  </h3>
+  <br><br><br>
+  <br><br><br>
+  <h1 align=center>剪輯影片</h1>
+
+  <h3 align=center><br><br>
+    <iframe width="260" height="200" src="https://www.youtube.com/embed/aOw3HuUCWEs" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <iframe width="260" height="200" src="https://www.youtube.com/embed/6ZDGRa_WFt0" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <iframe width="260" height="200" src="https://www.youtube.com/embed/Ks3jsBF-QTc" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <iframe width="260" height="200" src="https://www.youtube.com/embed/LXmNBVmzTio" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <iframe width="260" height="200" src="https://www.youtube.com/embed/6sqBnYq-iYU" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <iframe width="260" height="200" src="https://www.youtube.com/embed/1zlO1ggD15A" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <br><br><br>
+  </h3>
+  <br><br><br>
+  <br><br><br>
+  <h1 align=center>影片拍攝</h1>
+
+  <h3 align=center><br><br>
+    <iframe width="260" height="200" src="https://www.youtube.com/embed/oYvrifVCyVc" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <iframe width="260" height="200" src="https://www.youtube.com/embed/3rJZRqDFkF4" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <iframe width="260" height="200" src="https://www.youtube.com/embed/DIMTO_b0Ij8" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <br><br><br>
+  </h3>
+  <br><br><br>
+  <h1 align=center>UNITY製作</h1>
+
+  <h3 align=center><br><br>
+    <iframe width="260" height="200" src="https://www.youtube.com/embed/88sElgTf0XY" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <iframe width="260" height="200" src="https://www.youtube.com/embed/zOLMLOjOPUU" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <iframe width="260" height="200" src="https://www.youtube.com/embed/8trP0x2nT7U" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <br><br><br>
+  </h3>
+  <br><br><br>
+  <br><br><br>
+  <h1 align=center>網頁</h1>
+
+  <h3 align=center><br><br>
+    <img src="用心看藝眼.png" width="279""height=" 326">
+    <img src="往ˇ.png" width="145""" height="125">
+    <img src="_F__0_a107510320.html (1).png" width="383""" height="125"><br><br><br>
+
+    <img src="拍攝網頁.jpg" width="450""" height="125">
+    <img src="蛋糕網頁.jpg" width="450""" height="125">
+
+    <li><a href="https://ibm.kh.usc.edu.tw/">網站製作管理連結</a></li>
+    <li><a href="https://sites.google.com/view/uscwebdesign/%E9%A6%96%E9%A0%81">用心看『藝』眼</a></li>
+    <li><a href="https://sites.google.com/view/delicious-biscuits/%E9%A6%96%E9%A0%81">甜點鑑賞與製作之旅</a></li>
+    <li><a href="https://sites.google.com/view/m11155019/%E9%A6%96%E9%A0%81">拍攝架構圖</a></li>
+
+
+    <br><br><br>
+  </h3>
+  <h1 align=center>論文研究-系統</h1>
+
+  <h3 align=center><br><br>
+    <img src="FD46CC96-72E3-4299-8D79-45428071138B.jpg" width="320""height=" 326">
+    <img src="6BA7139C-EBDF-461F-9115-5081A8855490.jpg" width="320""" height="125"><br><br><br>
+    <img src="04D710A2-428A-4325-B965-C97CAFD45E94.jpg" width="340""" height="125">
+    <img src="BC343643-30B1-4E52-878E-76C1EF504FC0.jpg" width="300""" height="125">
+
+
+
+
+
+    <br><br><br>
+  </h3>
+
+
+</body>
+
+</html>

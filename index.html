@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+
+  
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>首頁</title>
+ <script>
+window.onload = function() {
+    var audio = document.getElementById('music');
+    audio.pause(); //打开页面时不播放音乐，
+}
+
+function play() {
+    var audio = document.getElementById('music');
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+        audio.currentTime = 0; //音乐从头播放
+    }
+}
+ </script>
+
+
+  <style>
+    /* 由大到小的 RWD */
+    .box1 {
+        height: 80px;
+        background: lightpink;
+    }
+
+    @media(max-width: 920px) {
+        .box1 {
+            background: orange;
+        }
+    }
+
+    @media(max-width: 768px) {
+        .box1 {
+            background: lightyellow;
+        }
+    }
+
+    @media(max-width: 540px) {
+        .box1 {
+            background: lightgreen;
+        }
+            .yinyue{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                height: 30px;
+                right: 20px;
+            }
+      width: 300px;
+       height: 100px;
+       background-color: pink;
+      }
+      @media screen and (min-width:500px){ 
+       .box{
+         width: 500px;
+         background-color: green;
+       }
+      }
+      @media screen and (min-width:1000px){ 
+       .box{
+         width: 1000px;
+         background-color: blue;
+       }
+      }
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    body {
+      padding: 20px 0;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+      padding: 34px 0 14px 40px;
+    }
+
+    nav>ul {
+      background-color: rgb(230, 230, 230);
+      list-style: none;
+      /* 移除項目符號 */
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: inherit;
+      /* 移除超連結顏色 */
+      display: block;
+      /* 讓 <a> 填滿 <li> */
+      font-size: 1.2rem;
+      padding: 10px;
+      text-decoration: none;
+      /* 移除超連結底線 */
+    }
+
+    /* 滑鼠移到 <a> 時變成深底淺色 */
+    nav li:hover {
+      background-color: rgb(115, 115, 115);
+      color: white;
+    }
+
+    .flex-nav {
+      display: flex;
+      justify-content: center;
+    }
+
+    .inline-block-nav {
+      text-align: center;
+      font-size: 0;
+      /* 移除 <li> 之間的空隙 */
+    }
+
+    .inline-block-nav>li {
+      display: inline-block;
+    }
+
+    content {
+      max-width: 650px;
+    }
+
+    #ads {
+      float: right;
+      /* 如果設定廣告放在左邊，請修改為 float: left; */
+      margin: 0 0 15px 15px;
+      /* 如果設定廣告放在左邊，修改為 margin: 0 15px 15px 0; */
+      /* width: 300px;配合廣告尺寸 */
+      width: auto;
+      height: auto;
+      clear: both;
+    }
+
+    h1 {
+      /*border-top-style:dotted;*/
+      border-top-style: solid;
+      border-color: #30D5C8;
+      border-width: auto;
+      /*border-bottom-style:dotted;*/
+      border-bottom-style: solid;
+    }
+    #mc {
+    z-index: 10px;
+    position: absolute;
+    /* position: fixed; */
+    left: 40PX;
+    top: 140px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#md {
+    position: absolute;
+    /* position: fixed; */
+    left: 40PX;
+    top: 230px;
+    width: 100px;
+    height: 60px;
+}
+
+#md span {
+    color: rgb(15, 86, 240);
+}
+
+#mc img {
+    border-radius: 50%;
+}
+
+
+  </style>
+
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <nav>
+    <ul class="flex-nav">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="自我介紹.html">自我介紹</a></li>
+      <li><a href="作品集.html">作品集</a></li>
+      <li><a href="獎狀.html">獎狀</a></li>
+      <li><a href="證照.html">證照</a></li>
+
+      
+       
+    </ul>
+  </nav>
+ 
+      
+  <br>
+  <br>
+   <!-- <div class="content">
+
+    <div id="ads">
+     廣告位置 
+    </div><br>
+    <div style="width:800px;"><br>
+     
+        </span>
+      </h1>
+    </div>
+  <table border frame=void rules=none cellspacing=0 align=center>
+  <tr><td WIDTH=75%><h1 align="center"><br><span style="font-size:1.2cm;">您好!<br>
+  我是陳佑凭以下是我的履歷<br>
+  希望藉由這個簡單的小網站<br>
+  讓各企業公司更簡單快速的認識我<br><br></td>
+    <td WIDTH=25%> <img src=大頭照.jpg style="display:block; margin:auto;"WIDTH=75%  ></td></tr>
+
+  </table><br><br><br><br>
+  -->
+   
+  
+      <tr>
+       
+        <table border frame=void rules=none cellspacing=0 align=center>
+        <tr><td WIDTH=75%><h1 align="center"><br><span style="font-size:1.2cm;">您好!<br>
+        我是陳佑凭以下是我的履歷<br>
+        希望藉由這個簡單的小網站<br>
+        讓各企業公司更簡單快速的認識我<br><br></td>
+          <td WIDTH=40%> <img src=修.jpg style="display:block; margin:auto;"WIDTH=100%  ></td></tr>
+
+        </table><br><br><br><br><br><br>
+
+          
+        
+
+           
+
+
+          
+  </div>   
+  <!--
+ <div id="md">
+        <span>点击图片播放</span>
+    </div>
+    <div id="mc">
+        <audio id="music" src="https://drive.google.com/uc?id=1LBnvpnxFH_JZjlzKnpn-XlSYCYNchsnb&export=download" ></audio>
+        <img src="https://drive.google.com/uc?id=1PjtmOI7dqE6OPXPEA4VwjuwpMgg2Wtga&export=download" width="80px" height="80px" title="点击播放音乐" onClick="play()">
+    </div>-->
+    <script src="https://drive.google.com/file/d/1LBnvpnxFH_JZjlzKnpn-XlSYCYNchsnb/view?usp=sharing"></script>
+
+
+
+  <br>
+
+  <br>
+</body>
+
+</html>
